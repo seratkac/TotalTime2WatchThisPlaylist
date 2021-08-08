@@ -1,2 +1,2 @@
 # file: Procfile
-run: python main.py
+worker: python main.py
