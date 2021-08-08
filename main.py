@@ -1,3 +1,5 @@
+import sys
+
 import ytside, GoogleSheetRW
 def main():
     with open("yttoken.txt", "r") as f:
@@ -52,4 +54,5 @@ def vidId2Lnk(vidId, playlist_id):
 
 
 if __name__ == "__main__":
-    main()
+    # main()
+    print(sys.platform)
