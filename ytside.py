@@ -42,7 +42,6 @@ class Main:
         self.get_title_duration()
 
     def get_videos_data(self, videos_id):
-        # print(videos_id)
         r = requests.get("https://www.googleapis.com/youtube/v3/videos", {
             "part": "snippet,contentDetails",
             "maxResults": "50",

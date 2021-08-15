@@ -1,0 +1,28 @@
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} Pre</title>
+      {% else %}
+      <title>Past</title>
+      {% endif %}
+    </head>
+    <body style="text-align: center;">
+        <form method="POST">
+            Playlist id:
+                <br>
+            <input style="margin-bottom: 25px ;" size="75" name="playlist_id" required placeholder="...youtube.com/playlist?list=..." value="{{ playlist_id }}" >
+                <br>
+            Spreadsheet id
+                <br>
+            <input style="margin-bottom: 25px ;" size="75" name="spreadsheet_id" placeholder="...docs.google.com/spreadsheets/d/..." value="{{ spreadsheet_id }}">
+                <br>
+            <input type="submit">
+        </form>
+
+        <hr>
+        <div style="text-align: center; vertical-align: middle; margin-top: 10%">
+            {% block content %}{% endblock %}
+        </div>
+
+    </body>
+</html>
