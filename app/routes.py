@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
-from flask import render_template, request
-from app import app
-
+from flask import Flask, render_template, request
 import main
 
 
-@app.route('/')
+server = Flask(__name__)
+
+
+@server.route('/')
 def index():
     return render_template(
         'index.html',
@@ -13,7 +14,7 @@ def index():
     )
 
 
-@app.route('/', methods=['POST'])
+@server.route('/', methods=['POST'])
 def gt():
     playlist_id = request.form['playlist_id']
     spreadsheet_id = request.form['spreadsheet_id']
