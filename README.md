@@ -25,4 +25,4 @@ If you want use google spreadsheet to extend info about video:
 3. Run main.py as you like to. 
 
 #### If you want to try it:
-1. Just wait, when I'll deploy it to heroku. I'll leave the link, when server starts.
+1. https://ttw2tp.herokuapp.com/

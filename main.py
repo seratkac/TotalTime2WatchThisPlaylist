@@ -1,7 +1,7 @@
 import ytside
 import GoogleSheetRW
 import os
-
+from app import server
 from datetime import timedelta
 
 
@@ -71,5 +71,4 @@ def vid_id2lnk(vidid, playlist_id):
 
 
 if __name__ == "__main__":
-    from app import server
     server.run()
